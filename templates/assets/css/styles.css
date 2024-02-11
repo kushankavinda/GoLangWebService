@@ -1,0 +1,24 @@
+main.container {
+    margin-bottom: 100px;
+}
+
+nav .navbar-brand > img {
+    display: inline-block;
+    height: 100%;
+    margin-right: 10px;
+}
+
+
+.center-in-the-page{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.custom-center-class{
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}

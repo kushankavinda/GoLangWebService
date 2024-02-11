@@ -4,10 +4,12 @@ import (
 	"fmt"
 	"log"
 	"strconv"
+
+	"github.com/learngolangwithkushan/internal/data"
 )
 
-func ReadWebPage(url string) (ResponseDto, error) {
-	var responseDto ResponseDto
+func ReadWebPage(url string) (data.ResponseToUser, error) {
+	var responseDto data.ResponseToUser
 
 	htmlVerion, err := getHTMLVersion(url)
 	if err != nil {

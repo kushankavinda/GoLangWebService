@@ -1,12 +1,12 @@
 {{define "title"}}Request{{end}}
 
 {{define "body"}}
-<h1>Request</h1>
+<h1>Security Analyzer</h1>
 
-<form class="form-inline" action="request.html" method="post">
+<form class="form-inline" action="request.gohtml" method="post">
     <div class="form-group">
-        <label for="helloValue">Hello value</label>
-        <input type="text" class="form-control" id="helloValue" placeholder="world" name="hello">
+        <label for="helloValue">kelly is here to help you</label>
+        <input type="text" class="form-control" id="helloValue" placeholder="Please enter the url here" name="hello">
     </div>
     <input type="hidden" name="submitted" value="true">
     <button type="submit" class="btn btn-default">Send the request</button>
@@ -16,7 +16,7 @@
 {{ if .Response }}
 {{ if .Success }}
 <div class="alert alert-success" role="alert">
-    Successful request, transaction ID: {{ .TransactionId }}
+    Successful request, Results: {{ .TransactionId }}
 </div>
 {{ else }}
 <div class="alert alert-danger" role="alert">

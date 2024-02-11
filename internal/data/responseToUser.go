@@ -1,6 +1,6 @@
-package service
+package data
 
-type ResponseDto struct {
+type ResponseToUser struct {
 	Title         string
 	HtmlVersion   string
 	HeadLines     string

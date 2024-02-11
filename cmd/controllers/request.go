@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/learngolangwithkushan/service"
+	"github.com/learngolangwithkushan/internal/service"
 )
 
 func (app *Application) RequestHandler(w http.ResponseWriter, r *http.Request) {
@@ -32,5 +32,5 @@ func (app *Application) RequestHandler(w http.ResponseWriter, r *http.Request) {
 		data.Success = true
 		data.Response = true
 	}
-	renderTemplate(w, r, "request.html", data)
+	renderTemplate(w, r, "..\\..\\templates\\html\\request.gohtml", data)
 }
